@@ -1,9 +1,14 @@
-import '../styles/globals.css'
+// import '../styles/globals.css'
+import 'antd/dist/antd.css';
+import Navbar from '../components/global_components/navbar';
 
 function MyApp({ Component, pageProps }) {
   return (
-  // <Component {}
-  <Component {...pageProps} />
+    // <Component {}
+    <>
+      <Navbar />
+      <Component {...pageProps} />
+    </>
 
   )
 }
